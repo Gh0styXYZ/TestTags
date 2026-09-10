@@ -2,65 +2,98 @@
 <html lang="sv">
 <head>
     <meta charset="UTF-8">
-    <title>Min skola</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LBS</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="container">
+        <header class="site-header">
+            <div class="brand">LBS</div>
+            <nav class="nav" aria-label="Huvudnavigation">
+                <a href="index.html" class="active">Startsida</a>
+                <a href="form.html">Elevformulär</a>
+                <a href="login.html">Logga in</a>
+                <a href="register.html">Registrera</a>
+            </nav>
+        </header>
 
-    <h1>LBS Växjö</h1>
+        <main class="page">
+            <section class="hero">
+                <div class="hero-text">
+                    <p class="eyebrow">Välkommen till</p>
+                    <h1>LBS</h1>
+                    <p>
+                        LBS är en modern och inspirerande lärandemiljö där elever får möjlighet
+                        att utveckla sina kunskaper, kreativitet och självförtroende i en trygg miljö.
+                        Här samverkar lärande, gemenskap och engagemang för att skapa framtidens ledare.
+                    </p>
+                </div>
+                <img src="https://static.bonniernews.se/ba/3b387e62-e03a-58f4-94cf-fdc6740c06f3.jpeg?crop=6036%2C3395%2Cx379%2Cy467&width=1400&format=pjpg&auto=avif" alt="Skolbyggnad och elever utanför skolan">
+            </section>
 
-    <p>
-        LBS Växjö är en gymnasieskola där elever kan läsa utbildningar
-        inom bland annat teknik, programmering och andra kreativa områden som estet.
-        Jag går Teknikprogrammet med inriktning systemutveckling.
-    </p>
+            <section class="section">
+                <h2>Favoritämne</h2>
+                <p>Mitt favoritämne är programmering, eftersom det är kreativt, logiskt och ger mig möjlighet att skapa saker med kod.</p>
+            </section>
 
-    <h2>Mitt favoritämne</h2>
-    <p>Mitt favoritämne är programmering eftersom jag tycker om att skapa saker med kod.</p>
+            <div class="content-grid">
+                <section class="section">
+                    <h2>Skolämnen</h2>
+                    <ul class="subject-list">
+                        <li>Programmering</li>
+                        <li>Matematik</li>
+                        <li>Svenska</li>
+                        <li>Engelska</li>
+                        <li>Kemi</li>
+                        <li>Fysik</li>
+                    </ul>
+                </section>
 
-    <h2>Skolämnen</h2>
-    <ul>
-        <li>Programmering</li>
-        <li>Religion</li>
-        <li>Svenska</li>
-        <li>Engelska</li>
-        <li>Kemi</li>
-    </ul>
+                <aside class="info-card section">
+                    <h2>Skolans värderingar</h2>
+                    <p>Vi strävar efter att varje elev ska känna sig sedd, utmanad och stöttad i sin utveckling.</p>
+                </aside>
+            </div>
 
-    <h2>Min skola</h2>
-    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDUyyrFp0Qheb3hKrqB8TeIIiHY85T3J7622kGJquraQ&s=10" alt="LBS växjö" width="400">
+            <section class="section">
+                <h2>Veckoschema</h2>
+                <table class="schedule">
+                    <thead>
+                        <tr>
+                            <th>Dag</th>
+                            <th>Ämne 1</th>
+                            <th>Ämne 2</th>
+                            <th>Ämne 3</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Måndag</td>
+                            <td>Matematik</td>
+                            <td>Programmering</td>
+                            <td>Svenska</td>
+                        </tr>
+                        <tr>
+                            <td>Tisdag</td>
+                            <td>Engelska</td>
+                            <td>Kemi</td>
+                            <td>Fysik</td>
+                        </tr>
+                        <tr>
+                            <td>Onsdag</td>
+                            <td>Svenska</td>
+                            <td>Programmering</td>
+                            <td>Religion</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </main>
 
-    <h2>Skolschema</h2>
-
-    <table border="1">
-        <tr>
-            <th>Dag</th>
-            <th>Ämne 1</th>
-            <th>Ämne 2</th>
-            <th>Ämne 3</th>
-        </tr>
-        <tr>
-            <td>Måndag</td>
-            <td>Kemi</td>
-            <td>Religion</td>
-            <td>Svenska</td>
-        </tr>
-        <tr>
-            <td>Tisdag</td>
-            <td>Svenska</td>
-            <td>Fysik</td>
-            <td>Webb</td>
-        </tr>
-        <tr>
-            <td>Onsdag</td>
-            <td>Engelska</td>
-            <td>Svenska</td>
-            <td>Ai</td>
-        </tr>
-    </table>
-
-    <br>
-
-    <a href="form.html">Gå till studentformuläret</a>
-
+        <footer class="site-footer">
+            <p>© 2026 LBS</p>
+        </footer>
+    </div>
 </body>
 </html>

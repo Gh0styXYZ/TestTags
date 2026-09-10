@@ -2,55 +2,71 @@
 <html lang="sv">
 <head>
     <meta charset="UTF-8">
-    <title>Studentformulär</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elevformulär | LBS</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="container">
+        <header class="site-header">
+            <div class="brand">LBS</div>
+            <nav class="nav" aria-label="Huvudnavigation">
+                <a href="index.html">Startsida</a>
+                <a href="form.html" class="active">Elevformulär</a>
+                <a href="login.html">Logga in</a>
+                <a href="register.html">Registrera</a>
+            </nav>
+        </header>
 
-    <h1>Studentformulär</h1>
+        <main class="page">
+            <section class="form-card">
+                <h1>Elevformulär</h1>
+                <form>
+                    <div class="form-group">
+                        <label for="namn">Namn</label>
+                        <input type="text" id="namn" name="namn" placeholder="Skriv ditt namn">
+                    </div>
 
-    <form>
+                    <div class="form-group">
+                        <label for="email">E-postadress</label>
+                        <input type="email" id="email" name="email" placeholder="namn@exempel.se">
+                    </div>
 
-        <label for="namn">Namn:</label>
-        <input type="text" id="namn" name="namn">
+                    <div class="form-group">
+                        <label for="favoritamne">Favoritämne</label>
+                        <select id="favoritamne" name="favoritamne">
+                            <option value="programmering">Programmering</option>
+                            <option value="matematik">Matematik</option>
+                            <option value="svenska">Svenska</option>
+                            <option value="engelska">Engelska</option>
+                            <option value="kemi">Kemi</option>
+                        </select>
+                    </div>
 
-        <br><br>
+                    <fieldset class="hobby-group">
+                        <legend>Hobbyer</legend>
+                        <label><input type="checkbox" name="hobby" value="fotboll"> Fotboll</label>
+                        <label><input type="checkbox" name="hobby" value="musik"> Musik</label>
+                        <label><input type="checkbox" name="hobby" value="gaming"> Gaming</label>
+                        <label><input type="checkbox" name="hobby" value="fotografering"> Fotografering</label>
+                    </fieldset>
 
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email">
+                    <div class="form-group">
+                        <label for="meddelande">Meddelande</label>
+                        <textarea id="meddelande" name="meddelande" rows="5" placeholder="Skriv ett meddelande..."></textarea>
+                    </div>
 
-        <br><br>
+                    <div class="button-row">
+                        <input type="submit" value="Skicka" class="btn btn-primary">
+                        <input type="reset" value="Återställ" class="btn btn-secondary">
+                    </div>
+                </form>
+            </section>
+        </main>
 
-        <label for="favoritämne">Favoritämne:</label>
-        <select id="favoritämne" name="favoritämne">
-            <option value="programmering">Programmering</option>
-            <option value="matematik">Matematik</option>
-            <option value="svenska">Svenska</option>
-            <option value="engelska">Engelska</option>
-            <option value="fysik">Fysik</option>
-        </select>
-
-        <br><br>
-
-        <p>Vilka hobbyer har du?</p>
-
-        <input type="checkbox" id="gaming" name="hobby" value="gaming">
-        <label for="gaming">Gaming</label>
-
-        <br>
-
-        <input type="checkbox" id="musik" name="hobby" value="musik">
-        <label for="musik">Musik</label>
-
-        <br><br>
-        
-        <input type="submit" value="Skicka">
-        <input type="reset" value="Rensa">
-
-    </form>
-
-    <br>
-
-    <a href="index.html">Tillbaka till startsidan</a>
-
+        <footer class="site-footer">
+            <p>© 2026 LBS</p>
+        </footer>
+    </div>
 </body>
 </html>
